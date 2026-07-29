@@ -5,10 +5,5 @@ def test_add():
     response = requests.post("https://todo-app-sky.herokuapp.com/", json=body)
     response_body = response.json()
     
-<<<<<<< HEAD
-    assert response.status_code == 200
-    assert response_body['completed'] == False
-=======
     assert response.status_code == 205
     assert response_body['completed'] == False
->>>>>>> main
