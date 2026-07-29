@@ -1,7 +1,7 @@
-# создать задачу, изменить и проверить что ИД не поменялся
 import  requests
 
 def test_edit():
+    """ создать задачу, изменить и проверить что ИД не поменялся """
     body = {"title": "created", "completed": False}
     response = requests.post("https://todo-app-sky.herokuapp.com/", json=body)
     id = response.json()["id"]
