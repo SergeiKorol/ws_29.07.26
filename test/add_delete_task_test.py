@@ -2,6 +2,11 @@ import requests
 
 
 def add_delete_task_test():
+    '''
+    создать задачу
+    удалить созданную задачу
+    проверить что гет по удалённой задаче == 404
+    '''
     body = {"title": "SomeTask", "completed": False}
     # создать задачу
     response = requests.post("https://todo-app-sky.herokuapp.com/", json=body)
